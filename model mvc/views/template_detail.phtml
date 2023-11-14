@@ -1,0 +1,15 @@
+<h1 class="mb-3 text-center"><?= $pic['title'] ?></h1>
+<section class="row">
+    <div class="col-12">
+        <img src="<?= $pic['src'] ?>" alt="<?= $pic['title'] ?>" class="img-fluid">
+    </div>
+    <div class="col-12 mt-3">
+        <p><?= $pic['description'] ?></p>
+    </div>
+    <div class="col-6 mt-3 fst-italic font-weight-light">
+        <p>Created At: <?= isset($pic['created_at']) ? $pic['created_at'] : 'N/A' ?> | Updated At: <?= isset($pic['updated_at']) ? $pic['updated_at'] : 'N/A' ?></p>
+    </div>
+    <div class="col-6 mt-3 fst-italic font-weight-light">
+        <p><?= isset($pic['author']) ? $pic['author'] : 'N/A' ?></p>
+    </div>
+</section>

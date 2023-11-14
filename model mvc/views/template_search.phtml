@@ -1,0 +1,7 @@
+<h1  class="position-relative py-2 px-4 text-bg-secondary border border-secondary rounded-pill mt-4 mb-4">Search</h1>
+<h2 class="text-center">Found <?= count($pictures) ?> result(s)</h2>
+<section class="row">
+<?php foreach ($pictures as $pic) : 
+  include("./views/components/pic_card.phtml");
+  endforeach ?>
+</section>
